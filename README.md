@@ -1,1 +1,7 @@
-# Trabalho-desenvolvimento-web
+# Trabalho de Desenvolvimento Web
+***Trabalho feito para a diciplina de Desenvolvimento Web na Universidade Estadual do Estado de Minas Gerais (UEMG) por Nicolas Oliveira, Mateus Riquelme, Matheus Santos, José Rodolfo e João Vitor***
+
+## Descrição do trabalho
+Site baseado no website original do Joker.
+
+
