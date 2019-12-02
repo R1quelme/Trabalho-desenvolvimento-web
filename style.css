@@ -4,48 +4,84 @@
 }
 p{
     text-align: justify; 
-    text-indent: 50px;
+    text-indent: 30px;
 }
+/*ESTILIZAÇÃO DO CONTEÚDO ///////////////////*/
 
-/*FOOTER START///////////////////*/
+body {
+  background-color: #f1f1f1;
+  position: relative;
+  padding-bottom: calc(110vh -320px);
+  min-height: 100vh;
+}
+main {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+article {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+article h2 {
+  margin: 10px 0 25px 0;
+}
+/* Last child é o ultimo elemento da pagina */
+article:last-child {
+  margin: 10px 0 25px 0;
+}
+article p {
+  margin-top: 16px;
+  line-height: 24px;
+}
+/*TAMANHO E COR DO FOOTER ///////////////////*/
 
 .footer {
-    padding: 25px 0 20px 0;
-    background-color:rgb(44, 44, 44);
-    color: white;
+padding: 30px 0 30px 0;
+background-color: rgb(44, 44, 44);
+color: white;
+position: absolute;
+bottom: 0;
 }
+/* ////////ESTILIZAÇÃO DO ELEMENTOS DO FOOTER/////////// */
+.footer hr {
+display: block; 
+height: 1px;
+border: 0; 
+border-top: 1px solid #ccc;
+margin: 1em 0; 
+padding: 0; 
+}
+.footer .social-icon{padding:0px;margin:0px;}
+.footer .social-icon a{display:inline-block;color:#fff;font-size:25px;padding:5px;}
+.footer .acount-icon a{display:block;color:#fff;font-size:18px;padding:5px;text-decoration:none;}
+.footer .acount-icon .fa{margin-right:25px;}
+
 .footer .title{text-align: left;color:#fff;font-size:25px;}
 
 
 .footer .social-icon{padding:0px;margin:0px;}
 .footer .social-icon a{display:inline-block;color:#fff;font-size:25px;padding:5px;}
 .footer .acount-icon a{display:block;color:#fff;font-size:18px;padding:5px;text-decoration:none;}
-.footer .acount-icon .fa{margin-right:25px;}
+.footer .acount-icon .fa{margin-right:25px;} */
 
 
 .footer .category a {
-    text-decoration: none;
-    color: #fff;
-    display: inline-block;
-    padding: 5px 20px;
-    margin: 1px;
-    border-radius:4px;
-    margin-top: 6px;
-    background-color: black;
-    border: solid 1px #fff;
-}
+text-decoration: none;
+color: #fff;
+display: inline-block;
+padding: 5px 20px;
+margin: 1px;
+border-radius:4px;
+margin-top: 6px;
+background-color: black;
+border: solid 1px #fff;
+} 
 
-.footer .payment{margin:0px;padding:0px;list-style-type:none}
-.footer .payment li{list-style-type:none}
-.footer .payment li a {
-    text-decoration: none;
-    display: inline-block;
-    color: #fff;
-    float: left;
-    font-size: 25px;
-    padding: 10px 10px;
-}
-    
+
+/*ANIMAÇÃO DO BOTÃO COMPRAR INGRESSO ///////////////////*/
   .button-ingresso span {
     cursor: pointer;
     display: inline-block;
