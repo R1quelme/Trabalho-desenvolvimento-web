@@ -12,7 +12,7 @@
   <title>The Joker</title>
 </head>
 
-<body>
+<body class="bg-dark text-white">
 
   <div class="main-picture fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -39,142 +39,153 @@
             data-target="#exampleModalCenter"><span> Compre já seu ingresso!</span></button>
         </ul>
       </div>
-      <a style="color: rgba(255,255,255,.5);" class="nav-link" href="eua/index.html">Inglês &nbsp;<img
+      <a style="color: rgba(255,255,255,.5);" class="nav-link" href="">Inglês &nbsp;<img
           src="imagens/eua.png" width="20px" height="20px"></a>
           
     </nav>
   </div>
+  <!-- INICIO DO CONTEUDO DA PAGINA -->
+  <main>
+    <!-- INICIO DO CAROUSEL DA PAGINA -->
 
-  <div class="bd-example position-relative" style="margin-top: 80px;">
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="imagens/coringa2.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block p-5">
-            <h5>Atual coringa</h5>
-            Uma arte feita por fãns que mostra bem toda a grandeza por trás do personagem
+      <div class="mt-2 bd-example position-relative">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="imagens/coringa2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block p-5">
+                <h5>Atual coringa</h5>
+                Uma arte feita por fãns que mostra bem toda a grandeza por trás do personagem
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="imagens/joker2019.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block p-5">
+                <h5>Joker nos cinemas</h5>
+                Um filme atual totalmente dedicado ao coringa conta bem toda a sua história antes mesmo de se tornar o rosto
+                familiar que conhecemos.
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="imagens/quadro.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block p-5">
+                <h5>Quadrinhos</h5>
+                Um vilão que veio dos quadrinhos e vem conquistando seu espaço, e mostrando que não é apenas o vilao do
+                batman.
+              </div>
+            </div>
           </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <div class="carousel-item">
-          <img src="imagens/joker2019.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block p-5">
-            <h5>Joker nos cinemas</h5>
-            Um filme atual totalmente dedicado ao coringa conta bem toda a sua história antes mesmo de se tornar o rosto
-            familiar que conhecemos.
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="imagens/quadro.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block p-5">
-            <h5>Quadrinhos</h5>
-            Um vilão que veio dos quadrinhos e vem conquistando seu espaço, e mostrando que não é apenas o vilao do
-            batman.
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </div><br>
+      </div><br>
 
   <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="color:black">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalCenterTitle" style="font-size: 25px">Bilheteria Online</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          ...
+            <form name="formcontato" method="POST" action="salva_numero.php" oninput="calc_totalint();">
+            <fieldset id="info"><legend>Informações do usuário</legend>
+              Nome: <input class="form-control" type="text" name="nome" placeholder="Nome Completo" required></br></br>
+              E-mail: <input class="form-control" type="email" name="email" placeholder="E-mail" required></br></br>
+              Idade: <input class="form-control" type="text" name="idade" placeholder="Idade" required></br></br>
+              Celular: <input class="form-control" type="text" name="numero" placeholder="(DDD)XXXX-XXXX" required></br></br>
+            </fieldset><br>
+            <fieldset id="pedido"><legend>Quero comprar ingressos para assistir ao Coringa</legend>
+              <p><input class="form-check-input"  type="checkbox" name="tPed" id="cPed">
+              <label for="cPed">Confirmo ser maior de idade (+18)</label></p>
+              <p><label for="cQtd">Quantidade de ingressos (R$20,00):</label> <input class="form-control"  type="number" name="cQtd" id="cQtd" min="0" max="99" value="0"></p>
+              <p><label for="cTot">Preço total: R$ </label><input class="form-control"  type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly></p>
+            </fieldset>
+              <br>
+            </form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button class="btn btn-primary" type="submit" value="Enviar" onclick="return validar_form_contato()">Enviar</button>
         </div>
       </div>
     </div>
   </div>
 
-  <div align="center" class="container">
-    <h1>Coringa</h1>
-    <p>Vilão clássico das histórias em quadrinhos do Batman o personagem do Coringa sempre chamou a atenção das pessoas,
-      afinal quem é esse homem vestido de palhaço que dá tanto trabalho a um dos Super-Heróis mais importante do
-      universo DC? Bom, se voce quer conhecer mais sobre esse personagem nada melhor que um site inteirinho sobre esse
-      assunto. Vamos falar aqui sobre sua história, seu personagem nos quadrinhos e nos cinemas.</p>
-    <p>Bem recentemente foi lançado um filme sobre ele, com a intenção de fazer que voce crie um laço com esse
-      personagem, deixando sua fama maior ainda. O filme retrata a vida de Arthur Fleck, o coringa, um homem de classe
-      baixa com um emprego que apenas dá o necessário para viver, no decorrer do filme se é mostrado a sofrida vida
-      desse personagem com varios desafios no seu dia a dia e enfrentando varias injustiças até se tornar o vilão mais
-      cruel de todos</p>
-    <p>É importante deixar claro que é um filme sobre vilão, e nao existe meio termo pra isso, o filme é repleto de
-      violência, tem cenas que realmente impactam e fazem você duvidar de que aquilo está realmente acontecendo e no
-      final te deixar com um sorriso no rosto com tudo que esta acontecendo e ainda com uma auto piedade do personagem.
-    </p>
-    <p>Mas isso nao é nem metade de toda história, nas proximas paginas há um resumo bem mais detalhado nao só sobre
-      esse filme, mas de todos os outro junto com os quadrinhos e tambem sobre a maldiçao que esse personagem carrega.
-    </p>
-  </div>
-  <br><br><br><br>
-
-
-
-  <!--   FOOTER START================== -->
-
-  <footer class="footer">
-    <div class="container">
+  <!-- INICIO DO ARTIGO DA PAGINA -->
+  <article class="mt-0 bg-light text-dark">
+    <div align="center" class="px-5 container">
+      <h1>Coringa</h1>
+      <p>Vilão clássico das histórias em quadrinhos do Batman o personagem do Coringa sempre chamou a atenção das pessoas,
+        afinal quem é esse homem vestido de palhaço que dá tanto trabalho a um dos Super-Heróis mais importante do
+        universo DC? Bom, se voce quer conhecer mais sobre esse personagem nada melhor que um site inteirinho sobre esse
+        assunto. Vamos falar aqui sobre sua história, seu personagem nos quadrinhos e nos cinemas.</p>
+      <p>Bem recentemente foi lançado um filme sobre ele, com a intenção de fazer que voce crie um laço com esse
+        personagem, deixando sua fama maior ainda. O filme retrata a vida de Arthur Fleck, o coringa, um homem de classe
+        baixa com um emprego que apenas dá o necessário para viver, no decorrer do filme se é mostrado a sofrida vida
+        desse personagem com varios desafios no seu dia a dia e enfrentando varias injustiças até se tornar o vilão mais
+        cruel de todos</p>
+      <p>É importante deixar claro que é um filme sobre vilão, e nao existe meio termo pra isso, o filme é repleto de
+        violência, tem cenas que realmente impactam e fazem você duvidar de que aquilo está realmente acontecendo e no
+        final te deixar com um sorriso no rosto com tudo que esta acontecendo e ainda com uma auto piedade do personagem.
+      </p>
+      <p>Mas isso nao é nem metade de toda história, nas proximas paginas há um resumo bem mais detalhado nao só sobre
+        esse filme, mas de todos os outro junto com os quadrinhos e tambem sobre a maldiçao que esse personagem carrega.
+      </p>
+    </div>
+    <br><br><br><br>
+  </article>
+</main>
+ <!--   FOOTER START================== -->
+ <footer class="footer">
+  <div class="container-fluid m-1 p-3">
       <div class="row">
-        <div class="col-sm-4">
-          <h4 class="title">Redes sociais</h4>
-          Aqui estão as redes sociais sobre o joker no facebook, twitter, instagram junto com pesquisas relacionadas a
-          ele no google e youTube
-          <ul class="social-icon">
-            <a href="https://www.facebook.com/CoringaOriginal/" target="_blank" class="social"><i
-                class="fab fa-facebook"></i></a>
-            <a href="https://twitter.com/seucoringa?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-              target="_blank" class="social"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/officialcoringaa/?hl=pt-br" target="_blank" class="social"><i
-                class="fab fa-instagram"></i></a>
-            <a href="https://www.youtube.com/watch?v=KUlIaSTYbuo" target="_blank" class="social"><i
-                class="fab fa-youtube"></i></a>
-            <a href="https://www.google.com/search?q=coringa&oq=coringa&aqs=chrome.0.69i59l3j69i57j69i60l2.1200j0j7&sourceid=chrome&ie=UTF-8"
-              target="_blank" class="social"><i class="fab fa-google"></i></a>
-          </ul>
-        </div>
-        <div class="col-sm-2">
-          <h4 class="title">Fans clubes</h4>
-          <span class="acount-icon">
-            <a href="https://www.facebook.com/FaClubeDoCoringa" target="_blank"><i class="fa fa-heart"></i> Fã clube</a>
-            <a href="https://nerdstore.com.br/" target="_blank"><i class="fa fa-cart-plus"></i> Loja</a>
-            <a href="http://www.jokermovie.net/" target="_blank"><i class="fa fa-user"></i> site</a>
-          </span>
-        </div>
-
-        <div class="col-sm-3">
-          <h4 class="title">Trabalho</h4>
-          Site sobre o coringa para a materia de desenvolvimento web da professora Paula
-        </div>
+          <div class="mr-5 pl-4 col-sm-4">
+              <h4 class="title text-center" style="font-size:1.5vw;">Redes sociais</h4>
+              <div style="font-size:1vw;">
+                <p>Aqui estão as redes sociais sobre o joker no facebook, twitter, instagram junto com pesquisas relacionadas a ele no google e youTube</p>
+                <ul class="social-icon text-center"><br>
+                <a href="https://www.facebook.com/CoringaOriginal/" target="_blank" class="social"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/seucoringa?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="social"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/officialcoringaa/?hl=pt-br" target="_blank" class="social"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/watch?v=KUlIaSTYbuo" target="_blank" class="social"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.google.com/search?q=coringa&oq=coringa&aqs=chrome.0.69i59l3j69i57j69i60l2.1200j0j7&sourceid=chrome&ie=UTF-8" target="_blank" class="social-icon"><i class="fab fa-google"></i></a>
+                </ul><br>
+            </div>
+          </div>
+          <div class="ml-5 col-sm-3">
+                  <h4 class="title text-center">Fã clube</h4>
+                  <span class="acount-icon">
+                  <a href="https://www.facebook.com/FaClubeDoCoringa" target="_blank"><i class="fa fa-heart"></i>Fã clube</a>
+                  <a href="https://nerdstore.com.br/" target="_blank"><i class="fa fa-cart-plus"></i>Loja</a>
+                  <a href="http://www.jokermovie.net/" target="_blank"><i class="fa fa-user"></i>Site Oficial</a>
+                  </span>
+              </div>
+          <div class="px-5 mr-2 col-sm-4">
+              <h4 class="title text-center" style="font-size:1.5vw;">Trabalho</h4>
+            <div style="font-size:1vw;">
+              <p>Site sobre o coringa para a materia de desenvolvimento web da professora Paula</p>
+            </div>
+          </div>
       </div>
-      <hr>
-
-      <div class="row text-center"> © 2019. Matheus Riquelme / João Vitor / Nicolas / José / Mateus.</div>
-    </div>
-
-  </footer>
+  </div>
+  <hr>
+  <div class="text-center">Copyright &copy; 2019. Matheus Riquelme / João Vitor / Nicolas Oliveira / José Rodolfo / Zói.</div>
+</footer>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -6,13 +6,54 @@ p{
     text-align: justify; 
     text-indent: 50px;
 }
-
-/*FOOTER START///////////////////*/
+/*///////////ESTILIZAÇÃO DO CONTEÚDO ///////////////////*/
+body {
+  position: relative;
+  padding-bottom: 10px;
+  min-height: calc(110vh - 320px);
+}
+main {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 30px 20px;
+  min-height: calc(160vh - 320px) !important;
+}
+/* ////////ESTILIZACAO DO ARTIGO////////// */
+article {
+  padding: 40px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+article h2 {
+  margin: 10px 0 25px 0;
+}
+/* Last child é o ultimo elemento da pagina */
+article:last-child {
+  margin: 10px 0 25px 0;
+  
+}
+article p {
+  margin-top: 16px;
+  line-height: 24px;
+}
+/*TAMANHO E COR DO FOOTER ///////////////////*/
 
 .footer {
-    padding: 25px 0 20px 0;
-    background-color:rgb(44, 44, 44);
-    color: white;
+  padding: 20px 25px 25px 20px;
+  background-color: rgb(44, 44, 44);
+  color: white;
+  position: relative;
+  bottom: 0;
+}
+/* ////////ESTILIZAÇÃO DO ELEMENTOS DO FOOTER/////////// */
+.footer hr {
+display: block; 
+height: 1px;
+border: 0; 
+border-top: 1px solid #ccc;
+margin: 1em 0; 
+padding: 0; 
 }
 .footer .title{text-align: left;color:#fff;font-size:25px;}
 
