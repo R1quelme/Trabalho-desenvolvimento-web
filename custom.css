@@ -4,7 +4,7 @@ ol.carousel-indicators {
     margin-bottom: 10rem!important;
   }
 .carousel-caption.d-none.d-md-block.p-5 {
-    bottom: 17vh;
+    bottom: 10rem;
 }
 .mt-2.bd-example.position-relative {
     margin-top: 2.5rem!important;
