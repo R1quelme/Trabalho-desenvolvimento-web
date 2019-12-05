@@ -16,7 +16,7 @@ main {
   width: 90vw;
   margin: 0 auto;
   padding: 30px 20px;
-  min-height: calc(160vh - 320px) !important;
+  min-height: calc(100vh - 320px) !important;
 }
 /* ////////ESTILIZACAO DO ARTIGO////////// */
 article {
@@ -30,7 +30,7 @@ article h2 {
 }
 /* Last child é o ultimo elemento da pagina */
 article:last-child {
-  margin: 10px 0 25px 0;
+  margin: -150px 0 25px 0;
   
 }
 article p {
@@ -46,6 +46,7 @@ article p {
   position: relative;
   bottom: 0;
 }
+
 /* ////////ESTILIZAÇÃO DO ELEMENTOS DO FOOTER/////////// */
 .footer hr {
 display: block; 
