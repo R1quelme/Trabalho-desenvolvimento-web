@@ -39,7 +39,43 @@
                 </div>
             </nav>
           </div>
-        <!-- INICIO DO CONTEUDO DA PAGINA -->
+<!-- INICIO DO CONTEUDO DA PAGINA -->
+
+<!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="color:black">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalCenterTitle" style="font-size: 25px">Bilheteria Online</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form name="formcontato" method="POST" action="salva_numero.php" oninput="calc_totalint();">
+            <fieldset id="info"><legend>Informações do usuário</legend>
+              Nome: <input class="form-control" type="text" name="nome" placeholder="Nome Completo" required></br></br>
+              E-mail: <input class="form-control" type="email" name="email" placeholder="E-mail" required></br></br>
+              Idade: <input class="form-control" type="text" name="idade" placeholder="Idade" required></br></br>
+              Celular: <input class="form-control" type="text" name="numero" placeholder="(DDD)XXXX-XXXX" required></br></br>
+            </fieldset><br>
+            <fieldset id="pedido"><legend>Quero comprar ingressos para assistir ao Coringa</legend>
+              <p><input class="form-check-input"  type="checkbox" name="tPed" id="cPed">
+              <label for="cPed">Confirmo ser maior de idade (+18)</label></p>
+              <p><label for="cQtd">Quantidade de ingressos (R$20,00):</label> <input class="form-control"  type="number" name="cQtd" id="cQtd" min="0" max="99" value="0"></p>
+              <p><label for="cTot">Preço total: R$ </label><input class="form-control"  type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly></p>
+            </fieldset>
+              <br>
+            </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button class="btn btn-primary" type="submit" value="Enviar" onclick="return validar_form_contato()">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        <!-- INICIO DO ARTIGO DA PAGINA -->
       <main>
           <article class="mx-5 mb-0 bg-light text-dark" style="margin-top: 110px;">
                 <div align="center" class="px-0 container">
@@ -124,7 +160,7 @@
     <div class="text-center">Copyright © 2019. Matheus Riquelme / João Vitor / Nicolas Oliveira / José Rodolfo / Zói.</div>
   </footer>
     
-    
+  <script src="forms.js"></script>
         <!-- Optional JavaScript -->
 	    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script 
