@@ -5,8 +5,8 @@
   <!-- Bootstrap CSS -->
 
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/bootstrap.css" >
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css"> <link rel="stylesheet" type="text/css" href="custom.css">
   <link href="icons/css/all.css" rel="stylesheet">
   <meta charset="utf-8">
   <title>The Joker</title>
@@ -45,7 +45,7 @@
     </nav>
   </div>
   <!-- INICIO DO CONTEUDO DA PAGINA -->
-  <main>
+
     <!-- INICIO DO CAROUSEL DA PAGINA -->
 
        <div class="bd-example position-relative" style="margin-top: 80px;">
@@ -127,7 +127,8 @@
   </div>
 
   <!-- INICIO DO ARTIGO DA PAGINA -->
-  <article class="mt-0 bg-light text-dark">
+  <main>
+  <article class="bg-light text-dark position-absolute">
     <div align="center" class="px-5 container">
       <h1>Coringa</h1>
       <p>Vilão clássico das histórias em quadrinhos do Batman o personagem do Coringa sempre chamou a atenção das pessoas,
@@ -151,23 +152,21 @@
   </article>
 </main>
  <!--   FOOTER START================== -->
- <footer class="footer">
-  <div class="container-fluid m-1 p-3">
+ <footer class="footer container-fluid">
+  <div class="container" style="display:flex;align-items: center;">
       <div class="row">
-          <div class="mr-5 pl-4 col-sm-4">
-              <h4 class="title text-center" style="font-size:1.5vw;">Redes sociais</h4>
-              <div style="font-size:1vw;">
+          <div class="col-sm-4" style="align-items: center; display: flex; flex-direction: column;">
+              <h4 class="title text-center">Redes sociais</h4>              
                 <p>Aqui estão as redes sociais sobre o joker no facebook, twitter, instagram junto com pesquisas relacionadas a ele no google e youTube</p>
                 <ul class="social-icon text-center"><br>
                 <a href="https://www.facebook.com/CoringaOriginal/" target="_blank" class="social"><i class="fab fa-facebook"></i></a>
                 <a href="https://twitter.com/seucoringa?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="social"><i class="fab fa-twitter"></i></a>
                 <a href="https://www.instagram.com/officialcoringaa/?hl=pt-br" target="_blank" class="social"><i class="fab fa-instagram"></i></a>
                 <a href="https://www.youtube.com/watch?v=KUlIaSTYbuo" target="_blank" class="social"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.google.com/search?q=coringa&oq=coringa&aqs=chrome.0.69i59l3j69i57j69i60l2.1200j0j7&sourceid=chrome&ie=UTF-8" target="_blank" class="social-icon"><i class="fab fa-google"></i></a>
+                <a href="https://www.google.com/search?q=coringa&amp;oq=coringa&amp;aqs=chrome.0.69i59l3j69i57j69i60l2.1200j0j7&amp;sourceid=chrome&amp;ie=UTF-8" target="_blank" class="social-icon"><i class="fab fa-google"></i></a>
                 </ul><br>
-            </div>
           </div>
-          <div class="ml-5 col-sm-3">
+          <div class="ml-5 col-sm-3" style="display:flex; flex-direction:column;align-items:center;">
                   <h4 class="title text-center">Fã clube</h4>
                   <span class="acount-icon">
                   <a href="https://www.facebook.com/FaClubeDoCoringa" target="_blank"><i class="fa fa-heart"></i>Fã clube</a>
@@ -175,16 +174,14 @@
                   <a href="http://www.jokermovie.net/" target="_blank"><i class="fa fa-user"></i>Site Oficial</a>
                   </span>
               </div>
-          <div class="px-5 mr-2 col-sm-4">
-              <h4 class="title text-center" style="font-size:1.5vw;">Trabalho</h4>
-            <div style="font-size:1vw;">
+          <div class="px-5 mr-2 col-sm-4" style="display: flex;align-items: center;flex-direction: column;">
+              <h4 class="title text-center">Trabalho</h4>            
               <p>Site sobre o coringa para a materia de desenvolvimento web da professora Paula</p>
-            </div>
           </div>
       </div>
   </div>
   <hr>
-  <div class="text-center">Copyright &copy; 2019. Matheus Riquelme / João Vitor / Nicolas Oliveira / José Rodolfo / Zói.</div>
+  <div class="text-center">Copyright © 2019. Matheus Riquelme / João Vitor / Nicolas Oliveira / José Rodolfo / Zói.</div>
 </footer>
 
   <!-- Optional JavaScript -->

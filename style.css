@@ -5,6 +5,7 @@
 p{
     text-align: justify; 
     text-indent: 50px;
+    font-size:15px;
 }
 /*///////////ESTILIZAÇÃO DO CONTEÚDO ///////////////////*/
 body {
@@ -16,26 +17,29 @@ main {
   width: 90vw;
   margin: 0 auto;
   padding: 30px 20px;
-  min-height: calc(160vh - 320px) !important;
+  min-height: calc(109vh - 320px) !important;
 }
 /* ////////ESTILIZACAO DO ARTIGO////////// */
 article {
-  padding: 40px;
-  margin-top: 0;
-  margin-bottom: 10px;
+  padding: 60px;
   border-radius: 10px;
 }
 article h2 {
   margin: 10px 0 25px 0;
 }
-/* Last child é o ultimo elemento da pagina */
+/* Last child é a definição do topo do artigo, o ultimo a aparecer na pagina */
 article:last-child {
-  margin: 10px 0 25px 0;
-  
+  margin: -160px auto;
 }
 article p {
   margin-top: 16px;
   line-height: 24px;
+}
+article img {
+  vertical-align: middle;
+  border-style: none;
+  border-radius: 30px;
+  box-shadow: 7px 7px 23px 0px rgba(0, 50, 50, 0.75);
 }
 /*TAMANHO E COR DO FOOTER ///////////////////*/
 
@@ -46,6 +50,7 @@ article p {
   position: relative;
   bottom: 0;
 }
+
 /* ////////ESTILIZAÇÃO DO ELEMENTOS DO FOOTER/////////// */
 .footer hr {
 display: block; 
