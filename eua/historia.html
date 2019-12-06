@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+        <!-- Bootstrap CSS -->
+      
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../css/bootstrap.css" >
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css"> <link rel="stylesheet" type="text/css" href="../custom.css">
+        <link href="../icons/css/all.css" rel="stylesheet">
+        <title>The Joker</title>
+</head>
+
+              
+<body class="bg-dark text-white">
+
+  <div class="main-picture fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html" style="font-family: joker-font; font-size: 50px;">Joker</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cinema.html">Movie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quadrinhos.html">Comics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="historia.html">History</a>
+          </li>
+          <button style="margin-left: 8px;" class="btn btn-danger button-ingresso" data-toggle="modal"
+          data-target="#exampleModalCenter"><span> Buy your ticket now!</span></button>
+        </ul>
+      </div>
+      
+      <a style="color: rgba(255,255,255,.5);" class="nav-link" href="../index.html">Portugues &nbsp;<img
+        src="../imagens/brasil.png" width="20px" height="20px"></a>
+        
+  </nav>
+</div>
+<!-- INICIO DO CONTEUDO DA PAGINA -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="color:black">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle" style="font-size: 25px">Online Box Office</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <form name="formcontato" method="POST" action="salva_numero.php" oninput="calc_totalint();">
+          <fieldset id="info"><legend> User Info</legend>
+            Name: <input class="form-control" type="text" name="nome" placeholder="Nome Completo" required></br></br>
+            E-mail: <input class="form-control" type="email" name="email" placeholder="E-mail" required></br></br>
+            Age: <input class="form-control" type="text" name="idade" placeholder="Idade" required></br></br>
+            Celphone: <input class="form-control" type="text" name="numero" placeholder="(DDD)XXXX-XXXX" required></br></br>
+          </fieldset><br>
+          <fieldset id="pedido"><legend> I want to buy tickets to watch the Joker</legend>
+            <p><input class="form-check-input"  type="checkbox" name="tPed" id="cPed">
+            <label for="cPed">I confirm to be of legal age (+18)</label></p>
+            <p><label for="cQtd">Number of Tickets (R $ 20,00):</label> <input class="form-control"  type="number" name="cQtd" id="cQtd" min="0" max="99" value="0"></p>
+            <p><label for="cTot">Total price: R$ </label><input class="form-control"  type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly></p>
+          </fieldset>
+            <br>
+          </form> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button class="btn btn-primary" type="submit" value="Enviar" onclick="return validar_form_contato()">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        <!-- INICIO DO ARTIGO DA PAGINA -->
+      <main>
+          <article class="mx-5 mb-0 bg-light text-dark" style="margin-top: 110px;">
+                <div align="center" class="px-0 container">
+                  <h1>The Clown of Crime Story</h1><br>
+                  <p>
+                    The Joker is also known to have no definite origin history. In almost 80 years of existence, the Clown of Crime has gained diverse origins in both comics, movies and even cartoons. These are some of them:<br> <br>
+                    <h2>The laughing man</h2><br>
+                    <figure>
+                      <img src="../imagens/01-O-Homem-Que-Ri.jpg">
+                    </figure>
+                    <p>The Joker appeared in the first edition of Batman's comic as a lunatic Clown-clad criminal who killed with a serum that left his victims with a macabre smile. The villain's appearance was heavily inspired by <strong> The Man Who Laughs </strong>, a movie based on Victor Hugo's novel. The production brought actor Conrad Veidt as Gwynplaine, a boy who, after being convicted by the English court for a betrayal by his father, undergoes a surgical procedure that mutilates his face, forcing him to "smile forever". Veidt's look coupled with the direction of German expressionist Paul Leni gave the character a frightening look, which eventually served as the basis for comic book artists Bill Finger, Bob Kane and Jerry Robinson.
+                    </p> <br><br>
+                    <h2>The man in the red hood</h2><br>
+                    <figure>
+                      <img src="../imagens/02-Capuz-Vermelho.jpg">
+                    </figure>
+                    <p>More than a decade after appearing in comics, the Joker gained its first origin in history. <strong>
+                      The Red Hooded Man</strong>, 1951. In the plot, Batman is invited to teach criminology at a college and gives his students a case that he himself couldn't solve. For months, the hero chased a robber wearing a red hood, who during a robbery of a deck factory ends up falling into a vat of chemicals and disappears without a trace. The bandit's mysterious whereabouts are now being investigated by the students who manage to capture him and reveal that he is none other than the Joker. The Clown explains to Batman and his students that he was a mafia henchman who performed hood thefts until his fateful encounter with the Dark Knight, as contact with chemicals affected his skin and hair, making him a clown. permanently. Accepted as the official origin of the villain, this plot was incorporated decades later by Alan Moore in the iconic comic book. <strong>The Deadly Joke</strong>.</p><br><br>
+                    <h2>Victim of your great-grandfather</h2><br>
+                    <figure>
+                      <img src="../imagens/03-Arthur.jpg">
+                    </figure>
+                    <p>Surfing in the popularity gained through its participation in the 1960s TV series, the Joker gained a comic of its own in 1975. The magazine consisted of Clown Crime adventures striking heroes of the DC Universe like Green Arrow and other villains from the gallery. Batman, like Two-Face. In the fifth edition, the clown declares himself the great-grandson of a great painter to recover “Laughing Man”, his most valuable work of art. During the plot, he tells a sad story about years of abuse from his great-grandfather who preached pranks that constantly crossed the line. According to your story, your look is the result of one of these "antics" after your ancestor applied an experimental ink to your skin. In the end, he reveals to his henchmen that it was all staging to gain access to the paintings on display. Although discarded in the publication itself, this story provided an introduction to the concept of the Joker not having a definite origin. It's worth noting that in his fictional story, the villain claims to be named Arthur, the name of Joaquin Phoenix's character in the solo movie.</p><br><br>
+                    <h2>The deadly joke</h2><br>
+                    <figure>
+                      <img src="../imagens/04-piada-mortal.jpg">
+                    </figure>
+                    <p>Known as the definitive story of the Joker, <strong>The Deadly Joke</strong> presents the most accepted origin of the Clown of Crime. In the plot created by Alan Moore and Brian Bolland, an unsuccessful comedian is hired by the mafia to steal from Ace Chemicals, a nuclear power plant where he worked as a laboratory assistant. Even wearing a red hood to conceal his identity, the crime goes awry thanks to Batman's interference and the bad guy ends up falling into a vat of chemicals that eventually change his appearance - and destroy his sanity - forever. The plot partially adapts the events of <strong> The Red Hooded Man </strong>, but creates a tragic origin that involves the failure in comedy and the death of his pregnant wife. However, Moore leaves open the possibility that the story is not exactly that, as the villain is not sure that the events happened this way, stating that he remembers the events in many different ways and that he needs to have a past. have “multiple choice” and you can choose the one you like best.</p><br><br>
+                    <h2>Jack Napier</h2><br>
+                    <figure>
+                      <img src="../imagens/05-Coringa-Jack-Nicholson.jpg">
+                    </figure>
+                    <p>Batman hit theaters in 1989 in the Tim Burton movie. The big antagonist of the movie is the Joker, played by Jack Nicholson, who partially adapts the character's classic origin as a gangster who is chased by Batman and ends up falling into a tank of chemicals. However, the production takes a different course and links the villain's civil identity with the hero's origin. In the feature, he is named Jack Napier and was responsible for murdering Thomas and Marta Wayne, parents of a boy named Bruce Wayne, who decides to devote his life to fighting crime thanks to the grief caused by the loss. This origin was incorporated into several comics, which came to treat the Joker's civil identity by the name of Jack Napier.</p><br><br>
+                    <h2>The Joker of the future</h2><br>
+                    <figure>
+                      <img src="../imagens/06-Batman-do-Futuro.jpg">
+                    </figure>
+                    <p>
+                      The animation <strong>Batman of the Future</strong> imagines Gotham 40 years after Bruce Wayne's retirement, when the vigilante passes his cloak to young Terry McGinnis. The series has won its own animated movie called The Return of the Joker, which comes into this future inexplicably without aging a single day. During the plot, McGinnis learns that Tim Drake, the third Robin, was kidnapped by the Joker and turned into a version of Crime Clown thanks to a chip in his brain. In addition to maintaining the Harlequin's tradition of hating Batman through his Robins, the animation creates its own version of the antagonist.</p><br><br>
+                    <h2>"Sabe como eu consegui essas cicatrizes?"</h2><br>
+                    <figure>
+                      <img src="../imagens/07-Batman-Cavaleiro-das-Trevas.jpg">
+                    </figure>
+                    <p><strong>
+                      Batman - the dark knight</strong>, the second film in Christopher Nolan's trilogy, featured one of the most celebrated versions of the Joker, played by Heath Ledger, which incorporates the dynamic of not defining a correct origin for the villain. In the movie, Crime Clown tells several stories about how he got the scars on his face that create a fake smile. At first, he states that his abusive father came home drunk, murdered his mother with a knife and "grinned" with the blade while asking "why are you so serious?". The second time around, he says that he mutilated himself to inspire his wife, who had her moneylenders face, smiling. </p><br><br>
+                    <h2>End of the game</h2><br>
+                    <figure>
+                      <img src="../imagens/08-Fim-de-jogo.jpg">
+                    </figure>
+                    <p>During the bow <strong>End of the game</strong>, the Joker creates a new origin that establishes as an evil ancestor. In plot, Batman's allies find several records that “Pale Man” was present at various times of calamity in Gotham's history. This mysterious figure is present at times such as disasters, accidents and crime scenes, leading Batman to believe that perhaps his archenemy is a kind of personification of the evil that plagues the city. In a story parallel to the main plot, the Crime Clown disguises himself as an Arkham Asylum doctor and presents several stories about his origin in other people. To patients, he reveals himself as a demon, robot, and even an agent created to replace Batman.
+                </div>
+                <br><br><br><br>
+              </article>
+        </main>
+    <!--   FOOTER START================== -->
+ <footer class="footer container-fluid">
+  <div class="container" style="display:flex;align-items: center;">
+      <div class="row">
+          <div class="col-sm-4" style="align-items: center; display: flex; flex-direction: column;">
+              <h4 class="title text-center">Social networks</h4>              
+                <p>Here are social networks about joker on facebook, twitter, instagram along with searches related to it on google and youTube</p>
+                <ul class="social-icon text-center"><br>
+                <a href="https://www.facebook.com/CoringaOriginal/" target="_blank" class="social"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/seucoringa?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="social"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/officialcoringaa/?hl=pt-br" target="_blank" class="social"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/watch?v=KUlIaSTYbuo" target="_blank" class="social"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.google.com/search?q=coringa&amp;oq=coringa&amp;aqs=chrome.0.69i59l3j69i57j69i60l2.1200j0j7&amp;sourceid=chrome&amp;ie=UTF-8" target="_blank" class="social-icon"><i class="fab fa-google"></i></a>
+                </ul><br>
+          </div>
+          <div class="ml-5 col-sm-3" style="display:flex; flex-direction:column;align-items:center;">
+                  <h4 class="title text-center">Fã clube</h4>
+                  <span class="acount-icon">
+                  <a href="https://www.facebook.com/FaClubeDoCoringa" target="_blank"><i class="fa fa-heart"></i>Fan club</a>
+                  <a href="https://nerdstore.com.br/" target="_blank"><i class="fa fa-cart-plus"></i>store</a>
+                  <a href="http://www.jokermovie.net/" target="_blank"><i class="fa fa-user"></i>
+                    official site</a>
+                  </span>
+              </div>
+          <div class="px-5 mr-2 col-sm-4" style="display: flex;align-items: center;flex-direction: column;">
+              <h4 class="title text-center">Job</h4>            
+              <p>Website about the joker for class Professor Paula's web developmentJob</p>
+          </div>
+      </div>
+  </div>
+  <hr>
+  <div class="text-center">Copyright © 2019. Matheus Riquelme / João Vitor / Nicolas Oliveira / José Rodolfo / Zói.</div>
+</footer>
+<script src="../forms.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

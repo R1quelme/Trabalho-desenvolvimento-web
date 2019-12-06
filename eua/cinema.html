@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../css/bootstrap.css" >
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css"> <link rel="stylesheet" type="text/css" href="../custom.css">
+  <link href="../icons/css/all.css" rel="stylesheet">
+  <meta charset="utf-8">
+    <title>The Joker</title>
+</head>
+              
+<body class="bg-dark text-white">
+
+  <div class="main-picture fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html" style="font-family: joker-font; font-size: 50px;">Joker</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cinema.html">Movie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quadrinhos.html">Comics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="historia.html">History</a>
+          </li>
+          <button style="margin-left: 8px;" class="btn btn-danger button-ingresso" data-toggle="modal"
+          data-target="#exampleModalCenter"><span> Buy your ticket now!</span></button>
+        </ul>
+      </div>
+      
+      <a style="color: rgba(255,255,255,.5);" class="nav-link" href="../index.html">Portugues &nbsp;<img
+        src="../imagens/brasil.png" width="20px" height="20px"></a>
+        
+  </nav>
+</div>
+<!-- INICIO DO CONTEUDO DA PAGINA -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="color:black">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle" style="font-size: 25px">Online Box Office</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <form name="formcontato" method="POST" action="salva_numero.php" oninput="calc_totalint();">
+          <fieldset id="info"><legend> User Info</legend>
+            Name: <input class="form-control" type="text" name="nome" placeholder="Nome Completo" required></br></br>
+            E-mail: <input class="form-control" type="email" name="email" placeholder="E-mail" required></br></br>
+            Age: <input class="form-control" type="text" name="idade" placeholder="Idade" required></br></br>
+            Celphone: <input class="form-control" type="text" name="numero" placeholder="(DDD)XXXX-XXXX" required></br></br>
+          </fieldset><br>
+          <fieldset id="pedido"><legend> I want to buy tickets to watch the Joker</legend>
+            <p><input class="form-check-input"  type="checkbox" name="tPed" id="cPed">
+            <label for="cPed">I confirm to be of legal age (+18)</label></p>
+            <p><label for="cQtd">Number of Tickets (R $ 20,00):</label> <input class="form-control"  type="number" name="cQtd" id="cQtd" min="0" max="99" value="0"></p>
+            <p><label for="cTot">Total price: R$ </label><input class="form-control"  type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly></p>
+          </fieldset>
+            <br>
+          </form> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button class="btn btn-primary" type="submit" value="Enviar" onclick="return validar_form_contato()">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- INICIO DO ARTIGO DA PAGINA -->
+  <main>
+      <article class="mx-5 mb-0 bg-light text-dark" style="margin-top: 110px;">
+            <div align="center" class="px-0 container">
+                <h1>Joker at the cinema</h1><br>
+                <p>Joker (name in Brazil) or Joker (name in Portugal (originally The Joker) is a fictional supervillain that appears in US comic books published by US publisher DC Comics, created by Jerry Robinson, Bill Finger and Bob Kane and first appeared in Batman # 1 (April 1940) Partly inspired by Gwynplaine, played by Conrad Veidt, in The Man Who Laughs (1928), credits for creating the Joker are disputed, Kane and Robinson claim responsibility. by their design, although they recognize Finger's contribution to the writing. According to the initial plan, the Joker should have died on his first appearance, but was spared by an editorial intervention, thus allowing the character to progress as the celebrated archenemy. Batman is also known by other names as “Prince Clown of Crime” or “Jester of Genocide.” To tell the story from the Joker on the big screen, we don't have to have your archrival, Batman, together. The joker has appeared in both movies and series and is certainly a blockbuster in every appearance.</p> <br><br>
+                  <h2> Suicide squad</h2><br>
+                  <figure>
+                    <img src="../imagens/jaredleto.jpg">
+                  </figure><br><br>
+                  <p>Jared Leto as Joker: A psycho super villain. One of the influences on the character's appearance includes Mexican cartel heads. Producer Charles Roven explained this approach, "He's more sociable. A successful and intelligent businessman rather than a sociopath." Joker tattoos were added by Ayer to give the character a modern gangster look. The role was originally offered to Ryan Gosling.
+                  </p><br><br>
+                <h2> Batman - the dark knight</h2><br>
+                <figure>
+                    <img src="../imagens/heathledger.jpg">
+                  </figure><br><br>
+                  <p>
+                    Heath Ledger as Joker: Which was described by the director as "a psycho clown, serial killer, schizophrenic, rude, cruel, sarcastic and with zero empathy." But it has a lot of black humor. Director Christopher Nolan wanted to work with Ledger on a number of previous works in the past, but had never succeeded. When Ledger saw Batman Begins, he discovered a method of making the character work according to the tone of the film, and Nolan agreed with his anarchic interpretation. To prepare for the role, Ledger lived alone in a hotel room for a month, formulating the character's posture, voice, and psyche. While initially he found it difficult, Ledger finally managed to generate a voice that didn't sound like Jack Nicholson's Joker from Tim Burton's Batman movie. He started a diary in which he wrote the Joker's thoughts and feelings to guide him through his performance. He also got Batman: The Killing Joke and Arkham Asylum: A Serious House on Serious Earth to read, which he "really tried [but] gave up." Ledger also cited as inspiration the movie A Clockwork Orange and Sid Vices. a little of everything in it. There is nothing consistent, "Ledger said, adding that" there are some surprises in it. "
+                  </p><br><br> 
+                  <h2> Joker</h2><br>
+                  <figure>
+                    <img src="../imagens/joker.png">
+                  </figure><br><br>
+                  <p>
+                    Joker (in Brazil, Joker) is a 2019 American psychological thriller movie directed by Todd Phillips, who co-wrote the screenplay with Scott Silver. Based on the eponymous DC Comics character, the film stars Joaquin Phoenix as the Joker. Joker is set in 1981 and follows Arthur Fleck, a failed stand-up comedian who is driven mad and engages in a life of crime and chaos in Gotham City. Robert De Niro, Zazie Beetz, Frances Conroy, Brett Cullen, Marc Maron, Bill Camp, Shea Whigham, Glenn Fleshler, Douglas Hodge and Brian Tyree Henry, among others, appear in supporting roles. Produced by Village Roadshow Pictures, DC Films, Sikelia Productions, Joint Effort Productions and Green Hat Films and distributed by Warner Bros. Pictures is part of DC Black, a series of films based on DC characters separated from the DC Extended Universe. There is no relation to the other versions of the character previously seen in the cinema. Joker tells the story of the failed comedian Arthur Fleck and the character's transition to the iconic villain. Directed by Todd Phillips and starring Joaquin Phoenix, the film caused concern before its debut for fears that its story might inspire violence, but with box office numbers, it seems that "fear" has been sidelined. The money raised made the long break record in the first weekend, surpassing another villain's movie, Venon, which opened in October 2018 with $ 80 million in profit. </p><br><br>
+                  <h3>The Joker's Curse</h3><br>
+                  <p>The story goes that all actors who live in the character's skin in theaters end up going crazy, even for a period of time. The first to play Joker in a live action was Cesar Romero in the 1960s on a TV series called "Batman." The actor was the most rejected joker by comic book audiences, claiming that he lacked the character's homicidal essence and just turned the villain into a clown. The actor even declared that there was a dissociation between him and the character he could not cross or capture, which ended up leaving him confused, insecure and with severe headaches.</p> 
+                    <p>
+                      More than twenty years later, in 1989, Jack Nicholson ("The Shining", "Chinatown") lived the character in the film directed by Tim Burton, also called "Batman". At first, the actor loved the creative freedom of the role and was also living in the villain's skin 24 hours a day, so much so that when the movie came out he was praised by fans for balancing the psychopathic and humorous characteristics of the character. But the role began to interfere with your personal, social and professional life. He complained of insomnia and migraines that only passed when the recordings were finished.</p>
+                    <p>Then came the heaviest case of all. Heath Ledger ("10 Things I Hate About You", "The Brokeback Mountain Secret") played the most popular wildcard in movie theaters in the movie "Batman: The Dark Knight," directed by Christopher Nolan. When the role was offered to Ledger, he even scorned the character. At the same time, the actor was going through personal and family problems, which certainly intensified the problems that Joker's experience had presented before: insomnia, anxiety, migraines and depression. A documentary about the actor even gained access to diaries showing how he had been affected by the character, living in it 24 hours a day. Ledger died of an accidental overdose of prescription drugs, doctors said, shortly after the movie was over, leaving his work in "The Imaginary World of Dr. Parnassus" unfinished. Jack Nicholson upon learning that Ledger had died said, "Well, I warned you!" The actor received a posthumous Oscar for best lead actor for his performance as Joker. Even Mark Hammil, known for playing Luke Skywalker in the "Star Wars" saga movies, who has been voicing Joker for the past 20 years in a series of animations, has even complained about the role. Even without directly giving life to the character, Hammil has often referred to the Joker as "an animal" and has also described bouts of anxiety and insomnia.</p>
+                    <p>Joaquin Phoenix is ​​currently in theaters playing Arthur Fleck in Joker. Todd Phillips's film offers a completely different look at the villain, and is already considered one of the most iconic versions of the character. The actor was also affected by the Joker's “curse”. According to sources close to the production, living with Phoenix during the recording of the film was “challenging”. The actor, like Leto, tried to incorporate the character even away from the screens. </p>
+        
+                   <sub>Font: Gente - iG @ https://gente.ig.com.br/cultura/2016-07-21/maldicao-do-coringa.html</sub>
+            </div>
+            <br><br><br><br>
+          </article>
+    </main>
+
+ <!--   FOOTER START================== -->
+ <footer class="footer container-fluid">
+  <div class="container" style="display:flex;align-items: center;">
+      <div class="row">
+          <div class="col-sm-4" style="align-items: center; display: flex; flex-direction: column;">
+              <h4 class="title text-center">Social networks</h4>              
+                <p>Here are social networks about joker on facebook, twitter, instagram along with searches related to it on google and youTube</p>
+                <ul class="social-icon text-center"><br>
+                <a href="https://www.facebook.com/CoringaOriginal/" target="_blank" class="social"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/seucoringa?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="social"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/officialcoringaa/?hl=pt-br" target="_blank" class="social"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/watch?v=KUlIaSTYbuo" target="_blank" class="social"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.google.com/search?q=coringa&amp;oq=coringa&amp;aqs=chrome.0.69i59l3j69i57j69i60l2.1200j0j7&amp;sourceid=chrome&amp;ie=UTF-8" target="_blank" class="social-icon"><i class="fab fa-google"></i></a>
+                </ul><br>
+          </div>
+          <div class="ml-5 col-sm-3" style="display:flex; flex-direction:column;align-items:center;">
+                  <h4 class="title text-center">Fã clube</h4>
+                  <span class="acount-icon">
+                  <a href="https://www.facebook.com/FaClubeDoCoringa" target="_blank"><i class="fa fa-heart"></i>Fan club</a>
+                  <a href="https://nerdstore.com.br/" target="_blank"><i class="fa fa-cart-plus"></i>store</a>
+                  <a href="http://www.jokermovie.net/" target="_blank"><i class="fa fa-user"></i>
+                    official site</a>
+                  </span>
+              </div>
+          <div class="px-5 mr-2 col-sm-4" style="display: flex;align-items: center;flex-direction: column;">
+              <h4 class="title text-center">Job</h4>            
+              <p>Website about the joker for class Professor Paula's web developmentJob</p>
+          </div>
+      </div>
+  </div>
+  <hr>
+  <div class="text-center">Copyright © 2019. Matheus Riquelme / João Vitor / Nicolas Oliveira / José Rodolfo / Zói.</div>
+</footer>
+<script src="../forms.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
