@@ -4,13 +4,14 @@
   <!-- Bootstrap CSS -->
 
   <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/bootstrap.css" >
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css"> <link rel="stylesheet" type="text/css" href="../custom.css">
   <link href="../icons/css/all.css" rel="stylesheet">
   <meta charset="utf-8">
   <title>The Joker</title>
 </head>
 
-<body>
+<body class="bg-dark text-white">
 
   <div class="main-picture fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -22,155 +23,162 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../cinema.html">Movie</a>
+            <a class="nav-link" href="cinema.html">Movie</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../quadrinhos.html">Comics</a>
+            <a class="nav-link" href="quadrinhos.html">Comics</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../historia.html">History</a>
+            <a class="nav-link" href="historia.html">History</a>
           </li>
           <button style="margin-left: 8px;" class="btn btn-danger button-ingresso" data-toggle="modal"
           data-target="#exampleModalCenter"><span> Buy your ticket now!</span></button>
         </ul>
       </div>
       
-      <a style="color: rgba(255,255,255,.5);" class="nav-link"  href="../index.html">Portugues <img src="../imagens/brasil.png" width="20px" height="20px"></a>
-    </nav>
-  </div>
+      <a style="color: rgba(255,255,255,.5);" class="nav-link" href="../index.html">Portugues &nbsp;<img
+        src="../imagens/brasil.png" width="20px" height="20px"></a>
+        
+  </nav>
+</div>
 
-  <div class="bd-example position-relative" style="margin-top: 80px;">
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="../imagens/coringa2.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block p-5">
-            <h5>Current joker</h5>
-            An art made by fans that shows well all the greatness behind the character.
+   <!-- INICIO DO CONTEUDO DA PAGINA -->
+
+    <!-- INICIO DO CAROUSEL DA PAGINA -->
+
+    <div class="bd-example position-relative" style="margin-top: 80px;">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../imagens/coringa2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block p-5">
+              <h5>Current joker</h5>
+              A fan-made art that shows all the greatness behind the character
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../imagens/joker2019.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block p-5">
+              <h5>Joker in theaters</h5>
+              A current movie entirely devoted to the joker tells its full story well before it even becomes the face
+              family we know.
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../imagens/quadro.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block p-5">
+              <h5>Comics</h5>
+              A villain who came from the comics and has been conquering his space, and showing that it's not just the village of
+              Batman.
+            </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <img src="../imagens/joker2019.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block p-5">
-            <h5>Joker in the movie theater</h5>
-            A current movie entirely devoted to the joker contains all its history before it becomes the familiar face
-            we know.
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="../imagens/quadro.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block p-5">
-            <h5>Comics</h5>
-            A villain who came from the comics and has been conquering his space, and showing that it's not just
-            Batman's village.
-          </div>
-        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
-  </div><br>
+    </div><br>
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
+   <!-- Modal -->
+   <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="color:black">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalCenterTitle" style="font-size: 25px">Online Box Office</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          ...
+            <form name="formcontato" method="POST" action="salva_numero.php" oninput="calc_totalint();">
+            <fieldset id="info"><legend> User Info</legend>
+              Name: <input class="form-control" type="text" name="nome" placeholder="Nome Completo" required></br></br>
+              E-mail: <input class="form-control" type="email" name="email" placeholder="E-mail" required></br></br>
+              Age: <input class="form-control" type="text" name="idade" placeholder="Idade" required></br></br>
+              Celphone: <input class="form-control" type="text" name="numero" placeholder="(DDD)XXXX-XXXX" required></br></br>
+            </fieldset><br>
+            <fieldset id="pedido"><legend> I want to buy tickets to watch the Joker</legend>
+              <p><input class="form-check-input"  type="checkbox" name="tPed" id="cPed">
+              <label for="cPed">I confirm to be of legal age (+18)</label></p>
+              <p><label for="cQtd">Number of Tickets (R $ 20,00):</label> <input class="form-control"  type="number" name="cQtd" id="cQtd" min="0" max="99" value="0"></p>
+              <p><label for="cTot">Total price: R$ </label><input class="form-control"  type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly></p>
+            </fieldset>
+              <br>
+            </form> 
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+          <button class="btn btn-primary" type="submit" value="Enviar" onclick="return validar_form_contato()">Submit</button>
         </div>
       </div>
     </div>
   </div>
-
-  <div align="center" class="container">
-    <h1>Joker</h1>
-    <p>Batman's classic comic book villain or Joker character has always caught people's attention, after all who is
-      this clown-clad man who gives so much trouble to one of the most important Superheroes in the DC universe? Well,
-      if you want to know more about this character, nothing better than an entire site on this subject. Let's talk here
-      about your story, your character in comics and movie theaters.</p>
-    <p>A movie about him was recently released with the intention of making you bond with this character, making him
-      even more famous. The film portrays the life of Arthur Fleck the Joker, a low-class man with a job that only gives
-      enough for a living, in the course of the film is shown the suffering life of this character with various
-      challenges in his daily life and facing various injustices to become the cruelest villain of all.</p>
-    <p>It's important to make it clear that it's a villain movie, and there's no middle ground to it, the movie is full
-      of violence, it has scenes that really impact and make you doubt that it's really happening and in the end leave
-      you with a smile on it. face with everything that is happening and still with a self pity of the character. </p>
-    <p>But that's not even half of the whole story, on the next pages there's a much more detailed summary not only
-      about this movie, but about all the other along with the comic and also about the curse this character carries.
-    </p>
-  </div>
-  <br><br><br><br>
+   <!-- INICIO DO ARTIGO DA PAGINA -->
+   <main>
+    <article class="bg-light text-dark position-relative">
+      <div align="center" class="px-5 container">
+        <h1>Joker</h1>
+        <p>Batman's classic comic book villain or Joker character has always caught people's attention, after all who is this clown-clad man who gives so much trouble to one of the most important Superheroes in the DC universe? Well, if you want to know more about this character, nothing better than an entire site on this subject. Let's talk here about your story, your character in comics and movie theaters.</p>
+        <p>A movie about him was recently released with the intention of making you bond with this character, making him even more famous. The film portrays the life of Arthur Fleck the Joker, a low-class man with a job that only gives enough for a living, in the course of the film is shown the suffering life of this character with various challenges in his daily life and facing various injustices to become the cruelest villain of all.
+        </p>
+        <p>It's important to make it clear that it's a villain movie, and there's no middle ground to it, the movie is full of violence, it has scenes that really impact and make you doubt that it's really happening and in the end leave you with a smile on it. face with everything that is happening and still with a self pity of the character.
+        </p>
+        <p>But that's not even half of the whole story, on the next pages there's a much more detailed summary not only about this movie, but about all the other along with the comic and also about the curse this character carries.
+        </p>
+      </div>
+      <br><br><br><br>
+    </article>
+  </main>
 
 
 
   <!--   FOOTER START================== -->
-
-  <footer class="footer">
-    <div class="container">
+ <footer class="footer container-fluid">
+  <div class="container" style="display:flex;align-items: center;">
       <div class="row">
-        <div class="col-sm-4">
-          <h4 class="title">Social networks</h4>
-          Here are social networks about joker on facebook, twitter, instagram along with searches related to it on
-          google and youTube
-          <ul class="social-icon">
-            <a href="https://www.facebook.com/CoringaOriginal/" target="_blank" class="social"><i
-                class="fab fa-facebook"></i></a>
-            <a href="https://twitter.com/seucoringa?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-              target="_blank" class="social"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/officialcoringaa/?hl=pt-br" target="_blank" class="social"><i
-                class="fab fa-instagram"></i></a>
-            <a href="https://www.youtube.com/watch?v=KUlIaSTYbuo" target="_blank" class="social"><i
-                class="fab fa-youtube"></i></a>
-            <a href="https://www.google.com/search?q=coringa&oq=coringa&aqs=chrome.0.69i59l3j69i57j69i60l2.1200j0j7&sourceid=chrome&ie=UTF-8"
-              target="_blank" class="social"><i class="fab fa-google"></i></a>
-          </ul>
-        </div>
-        <div class="col-sm-2">
-          <h4 class="title">Fans clubes</h4>
-          <span class="acount-icon">
-            <a href="https://www.facebook.com/FaClubeDoCoringa" target="_blank"><i class="fa fa-heart"></i> Fan club</a>
-            <a href="https://nerdstore.com.br/" target="_blank"><i class="fa fa-cart-plus"></i> Store</a>
-            <a href="http://www.jokermovie.net/" target="_blank"><i class="fa fa-user"></i> Site</a>
-          </span>
-        </div>
-
-        <div class="col-sm-3">
-          <h4 class="title">Job</h4>
-          Website about the joker for class Professor Paula's web development
-        </div>
+          <div class="col-sm-4" style="align-items: center; display: flex; flex-direction: column;">
+              <h4 class="title text-center">Social networks</h4>              
+                <p>Here are social networks about joker on facebook, twitter, instagram along with searches related to it on google and youTube</p>
+                <ul class="social-icon text-center"><br>
+                <a href="https://www.facebook.com/CoringaOriginal/" target="_blank" class="social"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/seucoringa?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="social"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/officialcoringaa/?hl=pt-br" target="_blank" class="social"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/watch?v=KUlIaSTYbuo" target="_blank" class="social"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.google.com/search?q=coringa&amp;oq=coringa&amp;aqs=chrome.0.69i59l3j69i57j69i60l2.1200j0j7&amp;sourceid=chrome&amp;ie=UTF-8" target="_blank" class="social-icon"><i class="fab fa-google"></i></a>
+                </ul><br>
+          </div>
+          <div class="ml-5 col-sm-3" style="display:flex; flex-direction:column;align-items:center;">
+                  <h4 class="title text-center">Fã clube</h4>
+                  <span class="acount-icon">
+                  <a href="https://www.facebook.com/FaClubeDoCoringa" target="_blank"><i class="fa fa-heart"></i>Fan club</a>
+                  <a href="https://nerdstore.com.br/" target="_blank"><i class="fa fa-cart-plus"></i>store</a>
+                  <a href="http://www.jokermovie.net/" target="_blank"><i class="fa fa-user"></i>
+                    official site</a>
+                  </span>
+              </div>
+          <div class="px-5 mr-2 col-sm-4" style="display: flex;align-items: center;flex-direction: column;">
+              <h4 class="title text-center">Job</h4>            
+              <p>Website about the joker for class Professor Paula's web developmentJob</p>
+          </div>
       </div>
-      <hr>
-
-      <div class="row text-center"> © 2019. Matheus Riquelme / João Vitor / Nicolas / José / Mateus.</div>
-    </div>
-
-  </footer>
-
+  </div>
+  <hr>
+  <div class="text-center">Copyright © 2019. Matheus Riquelme / João Vitor / Nicolas Oliveira / José Rodolfo / Zói.</div>
+</footer>
+<script src="../forms.js"></script>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

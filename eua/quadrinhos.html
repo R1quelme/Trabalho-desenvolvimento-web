@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../css/bootstrap.css" >
+  <link rel="stylesheet" type="text/css" href="bootstrap.min.css"> <link rel="stylesheet" type="text/css" href="../custom.css">
+  <link href="../icons/css/all.css" rel="stylesheet">
+  <meta charset="utf-8">
+    <title>The Joker</title>
+</head>
+              
+<body class="bg-dark text-white">
+
+  <div class="main-picture fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html" style="font-family: joker-font; font-size: 50px;">Joker</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cinema.html">Movie</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quadrinhos.html">Comics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="historia.html">History</a>
+          </li>
+          <button style="margin-left: 8px;" class="btn btn-danger button-ingresso" data-toggle="modal"
+          data-target="#exampleModalCenter"><span> Buy your ticket now!</span></button>
+        </ul>
+      </div>
+      
+      <a style="color: rgba(255,255,255,.5);" class="nav-link" href="../index.html">Portugues &nbsp;<img
+        src="../imagens/brasil.png" width="20px" height="20px"></a>
+        
+  </nav>
+</div>
+<!-- INICIO DO CONTEUDO DA PAGINA -->
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="color:black">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle" style="font-size: 25px">Online Box Office</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <form name="formcontato" method="POST" action="salva_numero.php" oninput="calc_totalint();">
+          <fieldset id="info"><legend> User Info</legend>
+            Name: <input class="form-control" type="text" name="nome" placeholder="Nome Completo" required></br></br>
+            E-mail: <input class="form-control" type="email" name="email" placeholder="E-mail" required></br></br>
+            Age: <input class="form-control" type="text" name="idade" placeholder="Idade" required></br></br>
+            Celphone: <input class="form-control" type="text" name="numero" placeholder="(DDD)XXXX-XXXX" required></br></br>
+          </fieldset><br>
+          <fieldset id="pedido"><legend> I want to buy tickets to watch the Joker</legend>
+            <p><input class="form-check-input"  type="checkbox" name="tPed" id="cPed">
+            <label for="cPed">I confirm to be of legal age (+18)</label></p>
+            <p><label for="cQtd">Number of Tickets (R $ 20,00):</label> <input class="form-control"  type="number" name="cQtd" id="cQtd" min="0" max="99" value="0"></p>
+            <p><label for="cTot">Total price: R$ </label><input class="form-control"  type="text" name="tTot" id="cTot" placeholder="Total a pagar" readonly></p>
+          </fieldset>
+            <br>
+          </form> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button class="btn btn-primary" type="submit" value="Enviar" onclick="return validar_form_contato()">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      <!-- INICIO DO ARTIGO DA PAGINA -->
+      <main>
+          <article class="mx-5 mb-0 bg-light text-dark" style="margin-top: 110px;">
+                <div align="center" class="px-0 container">
+                    <h1>Joker in the comic</h1><br><br>
+                    <h2> Various personalities</h2><br><br>
+                    <p>Recently, in issue number 42 of Justice League, Batman acquired control of the Moebius Chair, an apparatus that allows the user universal knowledge. One of the issues Bruce Wayne wanted to unravel while sitting on her was the identity of his greatest enemy. To her surprise, she replied that there are three different Jokers. This story was written by Geoff Johns, who today is one of the biggest names in DC feature film productions. The interpretations of the villain in the cinema are all different, but corresponding to the three versions that appeared in the comics.</p><br>
+                    <h2>Joker Master of Crime</h2><br>
+                    <p>This is the first version of the character and the only one that has a really detailed origin. Born in the Golden Age of comics in 1940, the villain was a serial killer with a somewhat controversial sense of humor. He makes his comic book debut by announcing over the radio that he will steal diamonds and murder a man, something he does shortly thereafter. He continues to kill people for later editions, as well as turning the victims' faces into their smile or masking their skin. This version of the Joker coincides with Jack Nicholson's portrayal of the character in the 1989 film directed by Tim Burton. However, such a violent vision of the villain may not last long in comics, as the Comics Code Authority emerged, a control that regulated what should or should not be in comic books. This system was created after German psychoanalyst Fredric Wertham's book Seduction of the Innocence claimed that comics were misleading children. This kind of censorship, which the industry itself has determined not to be socially persecuted, marked the end of the Golden Age and a major change in the Clown of Crime. </p><br><br>
+                    <h2> Playful Joker</h2><br>
+                    <p>The second version of the villain went from mass murderer to prankster. All he wanted most during this period was to rob banks and museums, evading the violent characteristics of earlier. He had no intention of hurting anyone who came his way, just making jokes with anyone who came his way. This period made the character famous for apparatuses like the splashing flower, the flag-firing pistol, and even the Jokermobile, a purple car with his face in the front. The villain's most entertaining personality became known on screen because of Cesar Romero's interpretation of the Joker in the 1960s television series. In Brazil, this version became much more famous because of Feira da Fruta, a redublagem made by fans that became popular over the Internet and is still worshiped to this day.</p><br><br>
+                    <h2>Psycho joker</h2><br>
+                    <p>In the 70's, the Joker was remodeled again. This time, he would once again be a villain with killer instinct. He became much more characteristic of his mental problems, making him completely insane, making his attitudes unpredictable. This personality makes the most sense with the current character, being the most iconic because of striking stories, such as The Deadly Joke, in which he leaves Barbara Gordon paraplegic just to make Commissioner Gordon's day bad and prove his point. View. Heath Ledger's interpretation of the Clown of Crime is closest to psychoticism, even though he has very clear anarchistic characteristics that were adopted by the actor during his period of study of the character. He has no problem killing violently, sees the Batman as his counterpart and tries to prove that his view of the world is the right one.</p><br><br>
+                    <h2> The Fourth Joker</h2><br>
+                    <p>Jared Leto's version in Suicide Squad is comprised of several eras of the character. The script brings many iconic moments of it, especially in his clothes. However, he runs away from the most common aspects of the villain. He is a pimp-style criminal, to the point of offering Harlequin to another thug to rape him afterwards. Attitude that leads to another new part of him: his most romantic involvement with Harleen Quinzel. In the feature, he seems to cherish some kind of love for the girl, something that differs greatly from comics, where he clearly abuses her. He has several tattoos all over his body, methodically scatters knives across the floor and makes very well calculated plans. Another curious point is that you cannot yet understand how he became the Joker, as he requests Harlequin to jump into chemicals when she is in personality transition. The villain should be better developed in Batman's upcoming feature film, as many of his scenes were cut from Suicide Squad.</p><br><br>
+                    <figure>
+                      <img src="../imagens/04-piada-mortal.jpg">
+                    </figure>
+                </div>
+                <br><br><br><br>
+              </article>
+        </main>
+   <!--   FOOTER START================== -->
+ <footer class="footer container-fluid">
+  <div class="container" style="display:flex;align-items: center;">
+      <div class="row">
+          <div class="col-sm-4" style="align-items: center; display: flex; flex-direction: column;">
+              <h4 class="title text-center">Social networks</h4>              
+                <p>Here are social networks about joker on facebook, twitter, instagram along with searches related to it on google and youTube</p>
+                <ul class="social-icon text-center"><br>
+                <a href="https://www.facebook.com/CoringaOriginal/" target="_blank" class="social"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/seucoringa?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="social"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/officialcoringaa/?hl=pt-br" target="_blank" class="social"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/watch?v=KUlIaSTYbuo" target="_blank" class="social"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.google.com/search?q=coringa&amp;oq=coringa&amp;aqs=chrome.0.69i59l3j69i57j69i60l2.1200j0j7&amp;sourceid=chrome&amp;ie=UTF-8" target="_blank" class="social-icon"><i class="fab fa-google"></i></a>
+                </ul><br>
+          </div>
+          <div class="ml-5 col-sm-3" style="display:flex; flex-direction:column;align-items:center;">
+                  <h4 class="title text-center">Fã clube</h4>
+                  <span class="acount-icon">
+                  <a href="https://www.facebook.com/FaClubeDoCoringa" target="_blank"><i class="fa fa-heart"></i>Fan club</a>
+                  <a href="https://nerdstore.com.br/" target="_blank"><i class="fa fa-cart-plus"></i>store</a>
+                  <a href="http://www.jokermovie.net/" target="_blank"><i class="fa fa-user"></i>
+                    official site</a>
+                  </span>
+              </div>
+          <div class="px-5 mr-2 col-sm-4" style="display: flex;align-items: center;flex-direction: column;">
+              <h4 class="title text-center">Job</h4>            
+              <p>Website about the joker for class Professor Paula's web developmentJob</p>
+          </div>
+      </div>
+  </div>
+  <hr>
+  <div class="text-center">Copyright © 2019. Matheus Riquelme / João Vitor / Nicolas Oliveira / José Rodolfo / Zói.</div>
+</footer>
+<script src="../forms.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
