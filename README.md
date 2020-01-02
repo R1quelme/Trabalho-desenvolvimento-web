@@ -4,5 +4,13 @@
 ## Descrição do trabalho 
 Site baseado no website original do Joker.
 
+### Página Inicial
 
-                   
+
+![alt text](http://github.com/R1quelme/Trabalho-desenvolvimento-web/tree/master/.screenshot/Screenshot1.png)
+
+
+![alt text](http://github.com/R1quelme/Trabalho-desenvolvimento-web/tree/master/.screenshot/Screenshot2.png)
+
+
+![alt text](http://github.com/R1quelme/Trabalho-desenvolvimento-web/tree/master/.screenshot/Screenshot3.png)
